@@ -1,0 +1,26 @@
+What is TCP-IP
+Anyway, to answer your 9 questions directly:
+
+1.is it a software(I think it has to be)?
+Generally yes. There are implementations of the core stack in firmware on some network boards (NICs).
+
+2.Is it a BIOS level software?
+No. The core protocols generally are kernel drivers.
+
+3.Where is the protocol set installed in a computer?(Windows,linux,mac etc..)
+Generally, the core protocols are kernel-level drivers for efficiency. Some protocols such as SSH, TELNET, and FTP are dynamically loaded when needed. There is a daemon on Linux/Unix systems called inetd (or xinetd - more current) which will start the SSH, TELNET, FTP, or other servers when a connection is made by the appropriate kind of client.
+
+4.Can we uninstall it like normal software?
+Not easily. Practically all networking today is built upon the TCP/IP protocol stack.
+
+5.Can we update it?
+Yes.
+
+6.Where do routers and modems have that tcp/ip stack(protocol set)?
+Incomplete question. Trying to read into your question, most routers run some sort of embedded Linux software, and the TCP/IP stack are kernel drivers. You can configure a kernel to build the protocols out of the kernel, but then you'd effectively have no networking at all.
+
+7.In which language is it written?
+Generally in C. Linux kernels are written almost entirely in C.
+
+8.Will we ever get an update?
+Often. When drivers are updated for Windows systems, or when the kernel is updated in Linux/Unix systems.
