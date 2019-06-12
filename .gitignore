@@ -1,0 +1,9 @@
+Tweets/
+bin/
+.metadata/
+.settings/
+.idea/
+vnev/
+out/
+node_modules/
+tweets*/
